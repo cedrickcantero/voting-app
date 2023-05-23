@@ -1,0 +1,18 @@
+.vote-button {
+    width:70%;
+    padding: 8px 16px;
+    background-color: #B8BCB5;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .vote-button.selected {
+    background-color: #E6C635;
+  }
+  
+  .vote-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

@@ -1,0 +1,47 @@
+.category {
+
+   &-male{
+    background-color: #F6A131;
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    margin-bottom: 20px;
+    height:100%;
+    width: 98%;
+    
+   }
+
+   &-female{
+    background-color: #F6A131;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height:100%;
+    width: 98%;
+
+  
+   }
+  }
+  
+  .category-title-container {
+    background-color: #E6C635;
+    width:100%;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+  }
+
+  .nominees {
+    display: flex;
+    // max-height: 100%;
+    // flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:1rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nominees {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

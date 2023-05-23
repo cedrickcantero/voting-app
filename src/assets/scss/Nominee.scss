@@ -1,0 +1,23 @@
+.nominee-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center ;
+    width: 10%;
+    padding:1rem;
+    border-width: 1px;
+    border-color: #C07A30;
+    border-style:solid;
+    background-color: #FED6AE;
+    border-radius: 3rem;
+    
+    .image-container {
+      width: 70%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+  }
+  
