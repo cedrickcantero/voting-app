@@ -42,7 +42,7 @@ const categories = [
             { id:3, name: "Penelope Cruz", image: pCruz },
             { id:4, name: "Natalie Portman", image: nPortman },
             { id:5, name: "Alexandra Daddario", image: aDaddario },
-            { id:6, name: "Penelope Cruz", image: pCruz },
+            { id:6, name: "Emily Stone", image: eStone },
             // Add more nominees...
         ],
     },
