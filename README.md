@@ -1,6 +1,8 @@
 # Voting App
 
 This repository contains the source code for the Voting application.
+You can check the live version in 
+https://cedrickcantero-voting-app.netlify.app/
 
 ## Table of Contents
 
@@ -40,6 +42,8 @@ Before you begin, ensure that you have the following prerequisites installed on 
    ```
   This command will start the development server and the app will be accessible at http://localhost:3000.
   Open your web browser and visit http://localhost:3000 to view the application.
+
+Note: Since its a session based application, your results will not be wiped if you refreshed the page. If oyu wish to vote a new one, you can open a new session.
 
 To Add categories or actors/actresses, open defaults.js and add the correspending categories/person.
 ![image](https://github.com/cedrickcantero/voting-app/assets/32406846/bfd546cb-bf51-40d3-96c0-1df86177fe6f)
