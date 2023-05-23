@@ -63,9 +63,12 @@ const Home = () => {
     }
 
     const handleSubmitVotes = () => {
-        if (!selectedNominees.male.name || !selectedNominees.female.name || !selectedNominees ) {
+        if ((!selectedNominees.male.name || !selectedNominees.female.name || !selectedNominees) && !hasSubmittedVote) {
             setPopupMessage('You have to pick one nominee for each category');
             setShowModal(true)
+        }else if(hasSubmittedVote && selectedMaleVote.name && selectedFemaleVote.name ){
+            setShowModal(true)
+            setPopupMessage(`You already voted for: ${selectedMaleVote.name}, ${selectedFemaleVote.name} `);
         } else {
             setVotesSubmitted(true);
             setHasSubmitted(true);
@@ -101,7 +104,7 @@ const Home = () => {
                      />
                 ))}
                 <div className="button-container">
-                    <button className="button-submit" onClick={handleSubmitVotes} disabled={hasSubmittedVote}>Submit your Votes</button>
+                    <button className="button-submit" onClick={handleSubmitVotes} >Submit your Votes</button>
                 </div>
             </div>
         </div>
